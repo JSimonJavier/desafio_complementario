@@ -4,7 +4,7 @@ const myProductManager = new ProductManager(path);
 
 export default (io) => {
   io.on("connection", (socket) => {
-    console.log("New client websocket: ", socket.id); // x8WIv7-mJelg7on_ALbx
+    console.log("New client websocket: ", socket.id); 
     socket.on("new-product", async (data) => {
       console.log(data);
       try {
