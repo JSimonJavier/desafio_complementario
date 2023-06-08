@@ -3,8 +3,8 @@ import "dotenv/config";
 
 const config = {
   mongoDB: {
-    URL: "mongodb+srv://javisimon22:dJrUwMt8jA9kgApw@data-base.shzhzce.mongodb.net/?retryWrites=true&w=majority",
-      options: {
+    URL: `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@cluster0.cyfup.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority `,
+    options: {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     },

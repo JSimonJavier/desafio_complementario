@@ -1,10 +1,11 @@
 {
-  "name": "desafio6",
+  "name": "desafiocomplementario",
   "version": "1.0.0",
-  "description": "Javier Simon",
+  "description": "JavierSimon",
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --experimental-json-modules src/server.js",
     "dev": "nodemon --experimental-json-modules src/server.js"
   },
